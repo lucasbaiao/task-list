@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TaskList.Global\TaskList.Global.csproj" />
+    <ProjectReference Include="..\TaskList.API.Domain\TaskList.API.Domain.csproj" />
+    <ProjectReference Include="..\TaskList.Database.Mongo\TaskList.Database.Mongo.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\ValuesController.cs" />
+  </ItemGroup>
+</Project>
