@@ -39,3 +39,18 @@ Thumbs.db
 
 # dotCover
 *.dotCover
+
+*.suo
+bin
+obj
+packages
+/.idea/
+/front/node_modules/
+/npm-debug.log
+*.pubxml
+*.user
+*.vs
+*.htm
+/front/package-lock.json
+/front/node_modules---
+/front/node_modules----
