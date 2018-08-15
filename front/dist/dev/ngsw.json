@@ -1,0 +1,141 @@
+{
+  "configVersion": 1,
+  "appData": {
+    "test": true
+  },
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "appshell",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/app/_pipes/date.js",
+        "/app/about/about-routing.module.js",
+        "/app/about/about.component.css",
+        "/app/about/about.component.html",
+        "/app/about/about.component.js",
+        "/app/about/about.module.js",
+        "/app/app-routing.module.js",
+        "/app/app.component.css",
+        "/app/app.component.html",
+        "/app/app.component.js",
+        "/app/app.module.js",
+        "/app/core/core.module.js",
+        "/app/core/module-import-guard.js",
+        "/app/core/navbar/navbar.component.css",
+        "/app/core/navbar/navbar.component.html",
+        "/app/core/navbar/navbar.component.js",
+        "/app/core/toolbar/toolbar.component.css",
+        "/app/core/toolbar/toolbar.component.html",
+        "/app/core/toolbar/toolbar.component.js",
+        "/app/i18n.providers.js",
+        "/app/main.js",
+        "/app/shared/config/env.config.js",
+        "/app/shared/shared.module.js",
+        "/app/shared/task-list/task-list.service.js",
+        "/app/tasks/model/task.js",
+        "/app/tasks/task-detail.component.html",
+        "/app/tasks/task-detail.component.js",
+        "/app/tasks/task-routing.module.js",
+        "/app/tasks/task.component.css",
+        "/app/tasks/task.component.html",
+        "/app/tasks/task.component.js",
+        "/app/tasks/task.module.js",
+        "/assets/data.json",
+        "/assets/favicon/favicon-DEV.ico",
+        "/assets/favicon/favicon-PROD.ico",
+        "/assets/svg/more.svg",
+        "/css/main.css",
+        "/index.html",
+        "/ngsw-worker.js",
+        "/system-config.js"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "patterns": [
+        "\\/timeline"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 60000,
+      "version": 1
+    },
+    {
+      "name": "api-performance",
+      "patterns": [
+        "\\/favorites"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 60000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/app/_pipes/date.js": "c9100178d28c6d82c6d684b75a6710350f9c7fe8",
+    "/app/about/about-routing.module.js": "7699b73f8061ac9727b7e850deb343cc573f2171",
+    "/app/about/about.component.css": "4b6073c6491b02c0afbecfcadbc76935840502cb",
+    "/app/about/about.component.html": "8c44ca8f07a729e4f6e45642a204bcdf89553489",
+    "/app/about/about.component.js": "9de98abab2dcd236c524722715cd1890751ecfb6",
+    "/app/about/about.module.js": "78cc76fd7c907fb8c51ba0ea655d187d04b29d3b",
+    "/app/app-routing.module.js": "f49b27c9f67154719024efdb66d0938a7cbc0255",
+    "/app/app.component.css": "749b005b0e5e861b4856661068f693612a880815",
+    "/app/app.component.html": "fb89b33c236ca0d684ae4706c6babaaa84bc9f1f",
+    "/app/app.component.js": "1f58191e92a7c216a85f1a9e18819001cab595cf",
+    "/app/app.module.js": "418e827b4876e35d0ad419c9a9fc85e08aac8bb2",
+    "/app/core/core.module.js": "49d6f9a299b8fb27cc6d3e0aa3f89c022b66ee19",
+    "/app/core/module-import-guard.js": "2662916531d4cb95065135597fa340b103bd86aa",
+    "/app/core/navbar/navbar.component.css": "ca29d0de0b312a878cc550aff78ec0db31750dda",
+    "/app/core/navbar/navbar.component.html": "50fcc55d98e92fe5efe55753752161867ac8e5bc",
+    "/app/core/navbar/navbar.component.js": "8c4cfeadd140874feb2c23e9010ca041282fbfa3",
+    "/app/core/toolbar/toolbar.component.css": "3f1d3613b63747784feb4260941ee2b87d50f2ff",
+    "/app/core/toolbar/toolbar.component.html": "ad9a7e5c07dd27a8be9e1a14f1ed57de310d40e8",
+    "/app/core/toolbar/toolbar.component.js": "c7bd03d6e19909daef9d4d5861e1e803bb792ced",
+    "/app/i18n.providers.js": "b6680d366d19030c98bfc34c3e5630219ced3239",
+    "/app/main.js": "f77c4c14ab14dc4ad0f1c0159e51d99beb2dbf89",
+    "/app/shared/config/env.config.js": "2502d3b725cceb01f9cb3b62ac648ac8d107bbc4",
+    "/app/shared/shared.module.js": "19993f7153a9bc386c12510682b15f1e77b42bb1",
+    "/app/shared/task-list/task-list.service.js": "5dc2baff7d95d2b7aa12aec5f8a76a05a18735ff",
+    "/app/tasks/model/task.js": "2ab0da38500366dcde2c4ccb8c16ffa4469b38d7",
+    "/app/tasks/task-detail.component.html": "8cf9e68dad3770ceaadb29e1073a912bb8efc83d",
+    "/app/tasks/task-detail.component.js": "7f3c1dbe01ba9a97bab6eff9dec6264ba7de7d2e",
+    "/app/tasks/task-routing.module.js": "69c778c963619f2dc1e33a67b1893b8cdc9c2fb0",
+    "/app/tasks/task.component.css": "ec427952ac38b0e500013667e0907f29958e97d5",
+    "/app/tasks/task.component.html": "12824e3e7837d5e05eadb724d2291a6f5b6538d8",
+    "/app/tasks/task.component.js": "347eb42e857da60fd00cb29d7b5b6a0297722a3f",
+    "/app/tasks/task.module.js": "a31754294c29d502420054fc468a0b84340b3648",
+    "/assets/data.json": "4442de734b100da8d244b35d34a355dee4dd9618",
+    "/assets/favicon/favicon-DEV.ico": "aa4fb0706ed367fb5c2fd6bd2b058c0dce8cc785",
+    "/assets/favicon/favicon-PROD.ico": "5d40a29d26398292f08a46b26f6788ec60f5f43e",
+    "/assets/svg/more.svg": "9838cd822e0f989a0befbd365365ee2751bbdebc",
+    "/css/main.css": "080cb00dcc31eb8e403e88108f52a1743733f669",
+    "/index.html": "39cec01273382f76f14460bb871c68f1322606e1",
+    "/ngsw-worker.js": "c5a902eadafef027da61d8960343491e15191ab4",
+    "/system-config.js": "338e13d29c2dcef0a425bfa7ccc15d5eb5578bf6"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<div *ngIf="task">
+
+  <h2>{{task.title | uppercase}}</h2>
+  <div>
+    <span>id: </span>{{task.id}}
+  </div>
+
+  <div>
+    <label>    Título:
+    </label>
+    <input [disabled]="isLoading" [(ngModel)]="task.title" placeholder="name" />
+    <label>Concluído</label>
+    <input [disabled]="isLoading || task.id == ''" type="checkbox" [checked]="task.status == 1" value="task.id" (change)="checkValue($event)"
+    />
+  </div>
+
+  <div>
+    <label>  Detalhes:
+    </label>
+    <input [disabled]="isLoading" [(ngModel)]="task.content" placeholder="content" />
+
+  </div>
+
+  <div>
+    <label> Criado em:
+    </label>
+    <input [disabled]="true" [(ngModel)]="task.createdAt" placeholder="content" />
+
+    <label>Atualizado em:
+    </label>
+    <input [disabled]="true" [(ngModel)]="task.lastUpdate" placeholder="content" />
+
+    <label>Concluído em:
+    </label>
+    <input [disabled]="true" [(ngModel)]="task.completedAt" placeholder="content" />
+  </div>
+
+  <br/>
+  <div>
+    <button (click)="updateTask()">Salvar</button>
+    <button *ngIf="task.id != ''" (click)="deleteTask()">Apagar</button>
+  </div>
+</div>

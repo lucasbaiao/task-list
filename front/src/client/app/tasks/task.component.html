@@ -1,0 +1,32 @@
+<p>Minhas Tarefas</p>
+
+<form (submit)="addName()">
+  <input required [(ngModel)]="newName" name="newName" placeholder="Criar uma nova tarefa">
+  <button type="submit">Adicionar</button>
+</form>
+
+<table *ngIf="tasks" class="table">
+  <thead>
+    <tr>
+      <th>
+        <label>Título</label>
+      </th>
+      <th>
+        <label>Conteúdo</label>
+      </th>
+      <th>
+        <label>Conclusão</label>
+      </th>
+    </tr>
+  </thead>
+
+  <tr *ngFor="let task of tasks" [class.selected]="task === selectedTask"
+    (click)="onSelect(task)">
+    <td data-label="Título">{{task.title}}</td>
+    <td data-label="Conteúdo/Nome">{{task.content}}</td>
+    <td data-label="Conclusão">{{task.completedAt}}</td>
+  </tr>
+</table>
+
+
+<sd-task-detail (toggledChange)="taskChanged($event)" [task]="selectedTask"></sd-task-detail>

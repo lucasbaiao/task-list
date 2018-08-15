@@ -1,0 +1,32 @@
+<p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
+
+<form (submit)="addName()">
+  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
+  <button type="submit">Add</button>
+</form>
+
+<table class="table table-responsive order-table type-3" *ngIf="!viewMode">
+  <thead>
+    <tr>
+      <th>
+        <label>Título</label>
+      </th>
+      <th>
+        <label>Conteúdo</label>
+      </th>
+      <th>
+        <label>Conclusão</label>
+      </th>
+    </tr>
+  </thead>
+
+  <tr *ngFor="let task of tasks" [class.selected]="task === selectedTask"
+    (click)="onSelect(task)">
+    <td data-label="Título">{{task.title}}</td>
+    <td data-label="Conteúdo/Nome">{{task.content}}</td>
+    <td data-label="Conclusão">{{task.completedAt}}</td>
+  </tr>
+</table>
+
+
+<sd-task-detail [task]="selectedTask"></sd-task-detail>
